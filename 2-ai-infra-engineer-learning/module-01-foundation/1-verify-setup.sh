@@ -28,7 +28,7 @@ echo ""
 
 # Kubernetes
 echo "Kubernetes Tools:"
-kubectl version --client --short || echo "❌ kubectl not found"
+kubectl version --client || echo "❌ kubectl not found"
 minikube version --short || echo "❌ minikube not found"
 helm version --short || echo "❌ helm not found"
 echo ""
