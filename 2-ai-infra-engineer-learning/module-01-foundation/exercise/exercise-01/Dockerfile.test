@@ -4,12 +4,12 @@ WORKDIR /app
 
 COPY verify_python.py .
 
-RUN python -m pip install --no-cache-dir --upgrade pip \
-    && python -m pip install --no-cache-dir \
+RUN pip install --no-cache-dir --upgrade pip \
+    && pip install --no-cache-dir \
         numpy \
         pandas \
         scikit-learn \
-    && python -m pip install --no-cache-dir \
+    && pip install --no-cache-dir \
         torch \
         --index-url https://download.pytorch.org/whl/cpu
 
